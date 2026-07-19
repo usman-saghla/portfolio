@@ -124,8 +124,8 @@ export default function BackgroundParticles() {
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(mouse.x, mouse.y);
-            // Draw interactive scanning vector line in cyan-violet gradient color
-            ctx.strokeStyle = `rgba(76, 201, 192, ${alpha})`;
+            // Interactive scanning vector toward cursor
+            ctx.strokeStyle = `rgba(61, 184, 174, ${alpha})`;
             ctx.lineWidth = 0.75;
             ctx.stroke();
           }

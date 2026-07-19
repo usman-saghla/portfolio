@@ -1,4 +1,4 @@
-const PALETTE = ["#4CC9C0", "#E8A33D", "#7C8CF8", "#3A6B8A"];
+const PALETTE = ["#3DB8AE", "#E8A33D", "#5A9BB5", "#3A6B8A"];
 const TOTAL_CELLS = 24 * 14;
 
 export default function ClassGrid() {

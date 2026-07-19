@@ -5,9 +5,9 @@ import React, { useState, useEffect, useRef } from "react";
 // Terrain Classification Colors & Metadata
 const CLASS_COLORS = {
   unclassified: "rgba(139, 148, 163, 0.15)",
-  vegetation: "#4CC9C0", // Cyan
+  vegetation: "#3DB8AE", // Teal
   urban: "#E8A33D", // Amber
-  water: "#7C8CF8", // Violet
+  water: "#5A9BB5", // Steel blue
   agriculture: "#3A6B8A", // Deep Blue
 };
 
@@ -340,7 +340,7 @@ export default function ResearchConsole() {
                   
                   {/* Scan Line Overlay */}
                   {scanStep === "bands" && (
-                    <div className="absolute inset-x-0 h-0.5 bg-accent/80 shadow-[0_0_12px_#4cc9c0] animate-scan" />
+                    <div className="absolute inset-x-0 h-0.5 bg-accent/80 shadow-[0_0_12px_#3db8ae] animate-scan" />
                   )}
                 </div>
               </div>
@@ -509,7 +509,7 @@ export default function ResearchConsole() {
                                 pkt.protocol === "TCP"
                                   ? "bg-accent/15 text-accent border border-accent/20"
                                   : pkt.protocol === "UDP"
-                                  ? "bg-violet-500/15 text-accent-violet border border-violet-500/20"
+                                  ? "bg-[rgba(90,155,181,0.15)] text-accent-steel border border-[rgba(90,155,181,0.25)]"
                                   : "bg-surface2 text-dim border border-border"
                               }`}
                             >
@@ -525,7 +525,7 @@ export default function ResearchConsole() {
                               <span className="text-accent2 animate-pulse">ALERT</span>
                             )}
                             {pkt.status === "scanning" && (
-                              <span className="text-accent-violet">SCAN</span>
+                              <span className="text-accent-steel">SCAN</span>
                             )}
                           </span>
                         </div>
